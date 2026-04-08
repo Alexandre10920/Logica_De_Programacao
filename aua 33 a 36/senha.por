@@ -1,7 +1,7 @@
 programa {
   funcao inicio() {
     inteiro senhaDigitada
-    const inteiro senhaAtual = 10920
+    const cadeia senhaAtual = "10920"
 
     
 
