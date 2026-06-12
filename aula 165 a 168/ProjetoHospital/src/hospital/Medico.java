@@ -9,7 +9,7 @@ public class Medico extends Profissional {
 	}
 
 	public void setEspecialidade(String especialidade) {
-		if (especialidade == null || especialidade.trim().isEmpty()) {
+		if (especialidade != null && !especialidade.trim().isEmpty()) {
 		this.especialidade = especialidade;
 		} else {
 			System.out.println("Erro: especialidade não pode ser negativa.");
@@ -17,7 +17,6 @@ public class Medico extends Profissional {
 	}
 	
 	@Override
-
 	public void exibirDados() {
 		System.out.println("Nome: " + getNome());
 		System.out.println("Registro: " + getRegistro());
